@@ -57,6 +57,7 @@ public class MultipleWindowsTest {
                 System.out.println("Title = " + driver.getTitle());
                 break;
             }
+
         }
 // go back to initial window
         driver.switchTo().window(parentWindowID);
