@@ -63,6 +63,7 @@ public class PopUpAndAlerts {
         Assert.assertTrue(text.contains("Euro"), "Verifying message if contains Euro text");
     }
 
+
     @AfterMethod
     public void tearDown() throws InterruptedException {
         Thread.sleep(1000);
