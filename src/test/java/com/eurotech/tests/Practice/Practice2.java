@@ -14,7 +14,7 @@ public class Practice2 {
 //        driver.get("https://learn.canvas.net/login/canvas%22");
         driver.get("https://canvas.instructure.com/login/canvas");
 
-        WebDriverWait wait = new WebDriverWait(driver, 2); // Wait for up to 10 seconds
+        WebDriverWait wait = new WebDriverWait(driver, 2); // Wait for up to 10 seconds  ???
 //        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("input[id='email address']")));
 
         driver.findElement(By.cssSelector("#pseudonym_session_unique_id")).sendKeys("Merallondon@live.co.uk");
