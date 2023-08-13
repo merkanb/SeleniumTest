@@ -58,6 +58,7 @@ public class iframeTest {
 //        driver.switchTo().parentFrame();            // 1. way
 //        driver.switchTo().frame("frame-top");       // 2. way
 
+
         driver.switchTo().defaultContent();         // same as like navigated url first time
         driver.switchTo().frame("frame-top");
         driver.switchTo().frame("frame-left");
