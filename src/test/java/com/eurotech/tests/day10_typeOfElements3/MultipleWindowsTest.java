@@ -56,6 +56,7 @@ public class MultipleWindowsTest {
             if (driver.getTitle().equals("New Window")) {            // this expected title already known or provided...
                 System.out.println("Title = " + driver.getTitle());
                 break;
+
             }
 
         }
