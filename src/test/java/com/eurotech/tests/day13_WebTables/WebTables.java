@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class WebTables {
@@ -31,6 +32,12 @@ public class WebTables {
         System.out.println("table.getText() = " + table.getText());     // get the whole table text
     }
 
-
-
+    @Test
+    public void getAllHeaders() {
+        List<WebElement> headers = driver.findElements(By.xpath("//*[text()='Structure']/../../th"));
+        System.out.println("headers.size() = " + headers.size());
+        for (WebElement header : headers) {
+            System.out.println("header = " + header.getText());
+        }
+    }
 }
