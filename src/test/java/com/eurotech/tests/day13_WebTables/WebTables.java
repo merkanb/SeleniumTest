@@ -40,4 +40,26 @@ public class WebTables {
             System.out.println("header = " + header.getText());
         }
     }
+
+    @Test
+    public void getAllRows() {
+        List<WebElement> rows = driver.findElements(By.xpath("//table[@border='1']/tbody/tr"));
+        System.out.println("rows.size() = " + rows.size());
+
+        for (WebElement row : rows) {
+            System.out.println("row.getText() = " + row.getText());
+        }
+
+        System.out.println(".........");
+
+        System.out.println(driver.findElement(By.xpath("//table[@border='1']/tbody/tr[3]")).getText());  // 3nd row
+
+        System.out.println("..........");
+
+        for (int i = 1; i <= rows.size(); i++) {
+            System.out.println(driver.findElement(By.xpath("//table[@border='1']/tbody/tr[" + i + "]")).getText());
+        }
+
+
+    }
 }
