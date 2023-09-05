@@ -69,5 +69,9 @@ public class WebTables {
         }
     }
 
+    @Test
+    public void getOneCell() {
+        System.out.println(driver.findElement(By.xpath("//table[@border='1']/tbody/tr[4]//td[1]")).getText());
+    }
 
 }
