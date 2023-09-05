@@ -59,8 +59,15 @@ public class WebTables {
         for (int i = 1; i <= rows.size(); i++) {
             System.out.println(driver.findElement(By.xpath("//table[@border='1']/tbody/tr[" + i + "]")).getText());
         }
-
-
-
     }
+
+    @Test
+    public void getAllCellsInOneRow() {
+        List<WebElement> financialCenterCells = driver.findElements(By.xpath("//table[@border='1']/tbody/tr[4]/td"));
+        for (WebElement cell : financialCenterCells) {
+            System.out.println(cell.getText());
+        }
+    }
+
+
 }
