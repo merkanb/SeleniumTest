@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -16,13 +17,13 @@ public class WebTables {
 
     @BeforeMethod
     public void setUp() {
-        driver= WebDriverFactory.getDriver("chrome");
+        driver = WebDriverFactory.getDriver("chrome");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("https://www.techlistic.com/p/demo-selenium-practice.html");
         driver.findElement(By.xpath("//button[@id='ez-accept-necessary']")).click();
         WebElement tableTitle = driver.findElement(By.xpath("//span[text()='Demo Webtable 2 (Dynamic Table)']"));
-        JavascriptExecutor jse= (JavascriptExecutor) driver;
-        jse.executeScript("arguments[0].scrollIntoView(true);",tableTitle);    // scroll to the WE
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
+        jse.executeScript("arguments[0].scrollIntoView(true);", tableTitle);    // scroll to the WE
     }
 
 
@@ -72,6 +73,35 @@ public class WebTables {
     @Test
     public void getOneCell() {
         System.out.println(driver.findElement(By.xpath("//table[@border='1']/tbody/tr[4]//td[1]")).getText());
+    }
+
+    private int getNumberOfColumns() {          // get columns number() dynamic
+        List<WebElement> columns = driver.findElements(By.xpath("//span[text()='Burj Khalifa']/../..//td"));
+        return columns.size();
+    }
+
+    private int getNumberOfRows(){              // get rows number() dynamic
+        List<WebElement> rows = driver.findElements(By.xpath("//table[@border='1']/tbody/tr"));
+        return rows.size();
+    }
+
+    @Test
+    public void getAllCellsByIndex() {
+        int rowNumber= getNumberOfRows();
+        int colNumber=getNumberOfColumns();
+
+        for (int i = 1; i <= rowNumber; i++) {
+            for (int j = 1; j <= colNumber; j++) {
+                WebElement cell = driver.findElement(By.xpath("//table[@border='1']/tbody/tr[" + i + "]/td[" + j + "]"));
+                System.out.println("cell.getText() = " + cell.getText());
+            }
+        }
+    }
+
+    @AfterMethod
+    public void tearDown() throws InterruptedException {
+        Thread.sleep(2000);
+        driver.quit();
     }
 
 }
