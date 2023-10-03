@@ -27,6 +27,8 @@ public class Driver {               // this Driver class is a sample of Singleto
             String browser = ConfigurationReader.get("browser");
             switch(browser){
                 case "chrome":
+                    System.setProperty("webdriver.chrome.driver", "C:\\Users\\Admin\\Desktop\\DERS NOTLARI\\4 AUTOMATION\\selenium grid\\chromedriver.exe");
+// because of the need to run latest version of chrome for cross browser running, we give this latest chromedriver.exe path to here to system Property..
                     driver = new ChromeDriver();
                     break;
 
