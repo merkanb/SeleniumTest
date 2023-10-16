@@ -11,6 +11,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 public class ExplicitWait {
@@ -35,7 +36,7 @@ public class ExplicitWait {
         WebElement helloWorldText = driver.findElement(By.cssSelector("#finish>h4"));
 //        WebElement helloWorldText = driver.findElement(By.xpath("//*[text()='Hello World!']"));    //2. locator
 
-        WebDriverWait wait=new WebDriverWait(driver,10);      //create explicit wait object (provide driver and time)
+        WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10) );      //create explicit wait object (provide driver and time)
         wait.until(ExpectedConditions.visibilityOf(helloWorldText));    // explicit wait according to the condition..
 
         Assert.assertEquals(helloWorldText.getText(), "Hello World!", "Text is NOT matched");
@@ -49,7 +50,7 @@ public class ExplicitWait {
         enableBtn.click();
 
         WebElement inputArea = driver.findElement(By.cssSelector("#input-example>input"));
-        WebDriverWait wait=new WebDriverWait(driver,15);           //create explicit wait object
+        WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(15));           //create explicit wait object
         wait.until(ExpectedConditions.elementToBeClickable(inputArea));   // explicit wait according to the condition.. !!!
         inputArea.sendKeys("Euro-tech was here");
     }
