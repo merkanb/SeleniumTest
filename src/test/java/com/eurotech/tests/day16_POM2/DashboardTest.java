@@ -32,7 +32,6 @@ My Account
 //        Assert.assertEquals(dashboardPage.welcomeMessage.getText(),"Welcome Teacher");
         Assert.assertEquals(dashboardPage.welcomeMessage.getText(),expectedText);
 
-
 //        ArrayList<String> expectedList=new ArrayList<>();
 //        expectedList.add("Developers");
 //        expectedList.add("All Posts");
@@ -58,6 +57,5 @@ My Account
         Assert.assertEquals(BrowserUtils1Me.getElementsText(dashboardPage.menulist), expectedList);
 
     }
-
 
 }
