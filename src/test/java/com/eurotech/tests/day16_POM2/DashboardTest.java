@@ -20,8 +20,7 @@ public class DashboardTest extends TestBase {
     @Test
     public void testName() {
 
-        /*
-Navigate to http://eurotech.study/login
+        /* Navigate to http://eurotech.study/login
 Login with teacher credentials
 Get the text of the dashboard menu list
 Verify that menu list is
