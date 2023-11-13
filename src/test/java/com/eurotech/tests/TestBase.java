@@ -63,6 +63,7 @@ public class TestBase {
     }
 
 
+
     @AfterMethod
     // we define these codes in case of Fail,  extentLogger codes are here nothing but just for reporting purpose...
     public void tearDown(ITestResult result) throws InterruptedException, IOException {
