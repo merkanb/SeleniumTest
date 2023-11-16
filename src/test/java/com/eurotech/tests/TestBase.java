@@ -53,8 +53,6 @@ public class TestBase {
         report.setSystemInfo("Test Engineer", "Erkan");
     }
 
-
-
     @BeforeMethod
     public void setUp() {
         driver = Driver.get();
