@@ -1,4 +1,4 @@
-package com.eurotech.Pages;
+package com.eurotech.pages;
 
 import com.eurotech.utilities.Driver;
 import org.openqa.selenium.WebElement;
