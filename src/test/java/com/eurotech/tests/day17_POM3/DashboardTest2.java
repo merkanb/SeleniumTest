@@ -1,8 +1,8 @@
 package com.eurotech.tests.day17_POM3;
 
-import com.eurotech.Pages.DashboardPage;
-import com.eurotech.Pages.LoginPage;
-import com.eurotech.Pages.PostsPage;
+import com.eurotech.pages.DashboardPage;
+import com.eurotech.pages.LoginPage;
+import com.eurotech.pages.PostsPage;
 import com.eurotech.tests.TestBase;
 import com.eurotech.utilities.BrowserUtils1Me;
 import com.eurotech.utilities.ConfigurationReader;
