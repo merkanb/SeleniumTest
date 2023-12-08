@@ -1,9 +1,8 @@
 package com.eurotech.tests.day18_ExtentReports;
 
-import com.eurotech.Pages.LoginPage;
+import com.eurotech.pages.LoginPage;
 import com.eurotech.tests.TestBase;
 import com.eurotech.utilities.ConfigurationReader;
-import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

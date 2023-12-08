@@ -1,6 +1,6 @@
 package com.eurotech.tests.day15_POM1;
 
-import com.eurotech.Pages.LoginPage;
+import com.eurotech.pages.LoginPage;
 import com.eurotech.tests.TestBase;
 import com.eurotech.utilities.ConfigurationReader;
 import org.openqa.selenium.By;

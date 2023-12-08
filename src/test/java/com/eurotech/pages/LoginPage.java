@@ -1,4 +1,4 @@
-package com.eurotech.Pages;
+package com.eurotech.pages;
 
 import com.eurotech.utilities.ConfigurationReader;
 import org.openqa.selenium.WebElement;
