@@ -1,4 +1,4 @@
-package com.eurotech.Pages;
+package com.eurotech.pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
