@@ -56,6 +56,7 @@ public class VerifyUserInfo extends TestBase {
         extentLogger.info("Navigate to url http://eurotech.study/login");
         driver.get(ConfigurationReader.get("url"));
 
+
 //        extentLogger.info("Click I understand button");
 //        loginPage.understandBtn.click();
 
