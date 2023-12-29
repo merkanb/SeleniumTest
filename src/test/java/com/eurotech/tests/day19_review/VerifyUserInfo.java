@@ -60,6 +60,7 @@ public class VerifyUserInfo extends TestBase {
 //        extentLogger.info("Click I understand button");
 //        loginPage.understandBtn.click();
 
+
         extentLogger.info("Login as Teacher");
         loginPage.loginWithTeacher();            // Contains understand button.click  function
 //        loginPage.usernameInput.sendKeys(ConfigurationReader.get("usernameTeacher"));
