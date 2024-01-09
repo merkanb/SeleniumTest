@@ -47,8 +47,6 @@ public class VerifyUserInfo extends TestBase {
 
     }
 
-
-
     @Test
     public void test1() {
         LoginPage loginPage = new LoginPage();
