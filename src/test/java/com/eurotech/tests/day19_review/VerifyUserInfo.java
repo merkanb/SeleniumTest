@@ -34,6 +34,7 @@ public class VerifyUserInfo extends TestBase {
 //        loginPage.loginBtn.click();
 
 
+
 //        String expectedText = "Welcome Teacher";
 //        String actualText = dashboardPage.welcomeMessage.getText();
 //        extentLogger.info("Verify that welcome message is "+expectedText);
