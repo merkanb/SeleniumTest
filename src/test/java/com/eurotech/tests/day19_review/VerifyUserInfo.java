@@ -42,6 +42,7 @@ public class VerifyUserInfo extends TestBase {
 
 
 
+
         extentLogger.info("Verify that login is successful");
         Assert.assertEquals(dashboardPage.welcomeMessage.getText(), "Welcome Teacher");
 //        Assert.assertEquals(driver.getCurrentUrl(), "http://eurotech.study/dashboard");  // FAIL --> WHY !!!!
