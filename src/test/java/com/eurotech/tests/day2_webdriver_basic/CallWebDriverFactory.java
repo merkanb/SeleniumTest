@@ -9,6 +9,7 @@ public class CallWebDriverFactory {
         TC        navigates to http://eurotech.study/login        verify that title is DevEx
          */
 
+
         WebDriver driver= WebDriverFactory.getDriver("chRomE");
         driver.get("http://www.eurotech.study/login");
 
