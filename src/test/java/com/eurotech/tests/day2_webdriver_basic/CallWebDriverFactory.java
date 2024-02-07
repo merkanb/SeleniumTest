@@ -4,6 +4,7 @@ import com.eurotech.utilities.WebDriverFactory;
 import org.openqa.selenium.WebDriver;
 
 public class CallWebDriverFactory {
+
     public static void main(String[] args) throws InterruptedException {
          /*
         TC        navigates to http://eurotech.study/login        verify that title is DevEx
