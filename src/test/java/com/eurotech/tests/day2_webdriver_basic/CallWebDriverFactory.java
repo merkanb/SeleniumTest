@@ -19,6 +19,7 @@ public class CallWebDriverFactory {
         String expecteTitle="DevEx";
         String actualTitle=driver.getTitle();
 
+
         if (expecteTitle.equals(actualTitle)){
             System.out.println("Passed");
         }else {
