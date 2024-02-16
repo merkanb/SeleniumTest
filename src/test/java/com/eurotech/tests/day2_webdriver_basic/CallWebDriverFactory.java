@@ -3,6 +3,7 @@ package com.eurotech.tests.day2_webdriver_basic;
 import com.eurotech.utilities.WebDriverFactory;
 import org.openqa.selenium.WebDriver;
 
+
 public class CallWebDriverFactory {
 
     public static void main(String[] args) throws InterruptedException {
