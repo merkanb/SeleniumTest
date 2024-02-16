@@ -25,6 +25,7 @@ public class CallWebDriverFactory {
             System.out.println("Failed");
         }
 
+
         Thread.sleep(2000);
         driver.close();
     }
