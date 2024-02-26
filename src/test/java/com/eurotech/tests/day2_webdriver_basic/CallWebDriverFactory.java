@@ -14,7 +14,6 @@ public class CallWebDriverFactory {
         WebDriver driver= WebDriverFactory.getDriver("chRomE");
         driver.get("http://www.eurotech.study/login");
 
-
         String expecteTitle="DevEx";
         String actualTitle=driver.getTitle();
 
