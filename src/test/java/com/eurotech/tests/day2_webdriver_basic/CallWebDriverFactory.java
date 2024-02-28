@@ -26,5 +26,6 @@ public class CallWebDriverFactory {
 
         Thread.sleep(2000);
         driver.close();
+
     }
 }
