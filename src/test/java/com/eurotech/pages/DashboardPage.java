@@ -37,7 +37,6 @@ public class DashboardPage extends BasePage{
 //    @FindBy(xpath = "//td[@class='hide-sm']/following-sibling::td[1]")
     public WebElement companyName;
 
-
     public void navigateMenu(String menuName){
 
         Driver.get().findElement(By.xpath("//*[text()='"+menuName+"']")).click();
