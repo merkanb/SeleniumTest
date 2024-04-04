@@ -42,7 +42,6 @@ public class DashboardPage extends BasePage{
 
     }
     public void navigateSubMenu(String subMenuName){
-
         BrowserUtils1Me.hover(myAccount);
         Driver.get().findElement(By.xpath("//span[text()='"+subMenuName+"']")).click();
     }
